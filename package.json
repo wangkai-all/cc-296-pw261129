@@ -1,0 +1,16 @@
+{
+  "name": "catalog-release-gate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "虚构的 OKF 商品资料发布台：构建 → 质量检查 ∥ 业务审阅 → 绑定批准 → 原子发布 / 回滚",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "dev": "node --no-warnings --watch server.js",
+    "seed": "node --no-warnings scripts/seed.js",
+    "test": "node --no-warnings --test --test-concurrency=1 test/*.test.js"
+  }
+}
